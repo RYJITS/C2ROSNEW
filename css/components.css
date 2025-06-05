@@ -1,0 +1,23 @@
+/* Buttons and cards */
+button {
+  border: none;
+  border-radius: var(--radius);
+  padding: 8px 16px;
+  background: var(--accent);
+  color: var(--fg);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background: #a24040;
+}
+.card {
+  background: var(--gray, #2c2c2c);
+  border-radius: var(--radius);
+  padding: var(--padding);
+  margin: var(--padding);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.02);
+}

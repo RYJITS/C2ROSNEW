@@ -1,0 +1,8 @@
+/* Layout */
+.main {
+  padding: var(--padding);
+}
+.sidebar {
+  width: 220px;
+  background: var(--gray, #2c2c2c);
+}
