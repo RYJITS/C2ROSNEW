@@ -7,6 +7,8 @@ C2R OS est un système d'exploitation web modulable conçu pour offrir une inter
 - Pages HTML : accueil, store, profil et paramètres.
 - Feuilles de style CSS organisées par fonctionnalités.
 - Script JavaScript minimal pour la barre latérale et les conseils du jour.
+- Orientation de la barre latérale à gauche ou à droite via la classe `sidebar-right`.
+- Bouton de réduction placé à côté du logo dans la barre latérale.
 - Gestion native des thèmes sombre et clair via les variables CSS.
 
 ## Lancer le projet

@@ -1,11 +1,20 @@
 const logo = document.getElementById('logo');
 const sidebar = document.querySelector('.sidebar');
-if (logo) {
-  logo.addEventListener('click', () => {
-    sidebar.classList.toggle('open');
-    logo.classList.add('rotate');
-    setTimeout(() => logo.classList.remove('rotate'), 300);
-  });
+const toggleBtn = document.getElementById('sidebar-toggle');
+function toggleSidebar() {
+  sidebar.classList.toggle('open');
+  logo.classList.add('rotate');
+  setTimeout(() => logo.classList.remove('rotate'), 300);
+}
+
+if (toggleBtn && logo) {
+  toggleBtn.addEventListener('click', toggleSidebar);
+  logo.addEventListener('click', toggleSidebar);
+  if (document.body.classList.contains('sidebar-right')) {
+    toggleBtn.textContent = '▶';
+  } else {
+    toggleBtn.textContent = '◀';
+  }
 }
 
 // Conseil du jour aléatoire
