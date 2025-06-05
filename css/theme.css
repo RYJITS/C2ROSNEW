@@ -2,6 +2,7 @@
   --bg: #111111;
   --fg: #f5f5f5;
   --accent: #8a3232;
+  --gray: #2c2c2c;
   --radius: 12px;
   --padding: 16px;
 }
@@ -9,6 +10,7 @@
 [data-theme="light"] {
   --bg: #f5f5f5;
   --fg: #111111;
+  --gray: #e0e0e0;
 }
 
 body {
@@ -16,4 +18,10 @@ body {
   color: var(--fg);
   font-family: sans-serif;
   font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }

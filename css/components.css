@@ -21,3 +21,31 @@ button:hover {
 .card:hover {
   transform: scale(1.02);
 }
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--fg);
+  cursor: pointer;
+  animation: pulse 3s ease-in-out infinite;
+}
+.logo.rotate {
+  animation: rotate 0.3s forwards;
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.toast {
+  position: fixed;
+  bottom: var(--padding);
+  right: var(--padding);
+  background: var(--accent);
+  color: var(--fg);
+  padding: 8px 12px;
+  border-radius: var(--radius);
+  display: none;
+}

@@ -1,14 +1,18 @@
 # C2R OS
 
-C2R OS est un système d'exploitation web modulable conçu pour offrir une interface moderne et responsive. Le projet contient les fichiers de base nécessaires pour lancer le site et suivre son évolution.
+C2R OS est un système d'exploitation web modulable conçu pour offrir une interface moderne et responsive. Ce dépôt contient les fichiers de base permettant de tester l'interface et de suivre son évolution.
 
 ## Contenu du dépôt
 
-- Fichiers HTML et CSS pour les différentes pages (accueil, store, profil, paramètres).
-- Gestion des thèmes sombre et clair.
-- Configuration de base pour l'organisation du code.
+- Pages HTML : accueil, store, profil et paramètres.
+- Feuilles de style CSS organisées par fonctionnalités.
+- Script JavaScript minimal pour la barre latérale et les conseils du jour.
+- Gestion native des thèmes sombre et clair via les variables CSS.
+
+## Lancer le projet
+
+Servez simplement les fichiers HTML avec votre serveur favori ou ouvrez `index.html` dans un navigateur moderne. Aucune dépendance supplémentaire n'est requise.
 
 ## Licence
 
 Ce projet est distribué sous la licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
-

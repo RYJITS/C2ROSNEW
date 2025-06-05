@@ -11,10 +11,24 @@
   <link rel="stylesheet" href="css/pages.css">
 </head>
 <body>
-  <div class="home-card card">
-    <h1>Bienvenue sur C2R OS</h1>
-    <p id="version">v1.0.2 – Build 2025-06-01</p>
-    <button onclick="location.href='store.html'">Aller au Store</button>
+  <div class="sidebar">
+    <div id="logo" class="logo">C2R</div>
+    <ul>
+      <li><a href="index.html" title="Accueil">🏠 <span>Accueil</span></a></li>
+      <li><a href="store.html" title="Store">🛍️ <span>Store</span></a></li>
+      <li><a href="profile.html" title="Profil">👤 <span>Profil</span></a></li>
+      <li><a href="settings.html" title="Paramètres">⚙️ <span>Paramètres</span></a></li>
+    </ul>
   </div>
+  <div class="main">
+    <div class="home-card card">
+      <h1>Bienvenue sur C2R OS</h1>
+      <p id="version">v1.0.2 – Build 2025-06-01</p>
+      <p id="daily-tip"></p>
+      <button onclick="location.href='store.html'">Aller au Store</button>
+    </div>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="js/main.js"></script>
 </body>
 </html>
