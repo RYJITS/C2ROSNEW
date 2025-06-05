@@ -1,0 +1,9 @@
+/* Page specific styles */
+.home-card {
+  text-align: center;
+}
+.store-grid {
+  display: grid;
+  gap: var(--padding);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
