@@ -1,8 +1,51 @@
 /* Layout */
 .main {
   padding: var(--padding);
+  margin-left: 60px;
+  transition: margin-left 0.3s ease;
 }
 .sidebar {
-  width: 220px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 60px;
   background: var(--gray, #2c2c2c);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: var(--padding);
+  transition: width 0.3s ease;
+  overflow-x: hidden;
+}
+.sidebar.open {
+  width: 200px;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+.sidebar li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0;
+  position: relative;
+}
+.sidebar li span {
+  margin-left: 8px;
+  display: none;
+}
+.sidebar.open li span {
+  display: inline;
+}
+.sidebar a {
+  color: var(--fg);
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+}
+.sidebar.open + .main {
+  margin-left: 200px;
 }

@@ -1,9 +1,23 @@
 /* Page specific styles */
 .home-card {
   text-align: center;
+  max-width: 400px;
+  margin: 80px auto;
 }
 .store-grid {
   display: grid;
   gap: var(--padding);
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: var(--padding);
+}
+.profile-list {
+  list-style: none;
+  padding: 0;
+}
+.profile-list li {
+  padding: 8px;
+  background: var(--gray);
+  margin-bottom: 8px;
+  border-radius: var(--radius);
+  cursor: move;
 }
